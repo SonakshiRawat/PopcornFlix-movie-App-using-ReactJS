@@ -1,0 +1,150 @@
+.cen {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  border-right: 1px solid rgb(221, 214, 214);
+}
+
+.middle {
+  width: 98%;
+  text-align: center;
+}
+
+.blocks {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  margin-left: 10px;
+}
+.overview2 {
+  display: none;
+}
+p {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.arrow-left {
+  position: absolute;
+  left: -3%;
+  top: 42%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.arrow-right {
+  position: absolute;
+  right: -3.5%;
+  top: 42%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 1100;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.type {
+  padding: 10px;
+}
+
+.overview {
+  color: white;
+  text-align: left;
+  width: 530px;
+  margin: 10px 0px;
+}
+
+.white {
+  position: absolute;
+  right: -26.5px;
+  top: -3%;
+  width: 30px;
+  height: 250px;
+  background-color: white;
+  z-index: 3;
+}
+
+.white2 {
+  position: absolute;
+  left: -60px;
+  top: -3%;
+  width: 50px;
+  height: 250px;
+  background-color: white;
+  z-index: 3;
+}
+
+@media (max-width: 848px) {
+  .cen {
+    width: 95vw;
+    border-right: none;
+    margin-right: 22px;
+  }
+  .arrow-left {
+    left: -30px;
+    top: 42%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .arrow-right {
+    right: -13px;
+    top: 42%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .white {
+    position: absolute;
+    right: -33px;
+    top: -3%;
+    width: 50px;
+    height: 250px;
+    background-color: white;
+    z-index: 3;
+  }
+
+  .white2 {
+    position: absolute;
+    left: -60px;
+    top: -3%;
+    width: 50px;
+    height: 250px;
+    background-color: white;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 618px) {
+  .overview {
+    display: none;
+  }
+  .overview2 {
+    display: block;
+  }
+}
+@media (max-width: 510px) {
+  .arrow-left {
+    left: -25px;
+  }
+
+  .arrow-right {
+    right: -13px;
+  }
+}
